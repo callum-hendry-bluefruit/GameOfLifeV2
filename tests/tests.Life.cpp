@@ -29,7 +29,7 @@ TEST(testLife, end_result)
     GameGrid.ToggleCell(1, 2);
     GameGrid.ToggleCell(2, 1);
 
-    Life EndResultTest(GameGrid.return_grid(), y, x);
+    Life EndResultTest(GameGrid.ReturnGrid(), y, x);
 
     EndResultTest.Start(1);
 
@@ -49,7 +49,7 @@ TEST(testLife, end_result_2)
     GameGrid.ToggleCell(4, 4);
     GameGrid.ToggleCell(3, 4);
 
-    Life EndResultTest(GameGrid.return_grid(), y, x);
+    Life EndResultTest(GameGrid.ReturnGrid(), y, x);
     EndResultTest.Start(1);
 
     char expected_alive = '*';
@@ -68,7 +68,7 @@ TEST(testLife, larger_grid)
     GameGrid.ToggleCell(4, 4);
     GameGrid.ToggleCell(3, 4);
 
-    Life EndResultTestWithLargerGrid(GameGrid.return_grid(), y, x);
+    Life EndResultTestWithLargerGrid(GameGrid.ReturnGrid(), y, x);
     EndResultTestWithLargerGrid.Start(1);
 
     char expected_alive = '*';
@@ -91,7 +91,7 @@ TEST(testLife, larger_grid_edges)
     GameGrid.ToggleCell(4, 3);
     GameGrid.ToggleCell(3, 4);
 
-    Life EndResultTestWithLargerGrid(GameGrid.return_grid(), y, x);
+    Life EndResultTestWithLargerGrid(GameGrid.ReturnGrid(), y, x);
     char expected_alive = '*';
 
     EndResultTestWithLargerGrid.Start(1);
@@ -111,7 +111,7 @@ TEST(testLife, small_grid)
     Grid GameGrid(y, x);
 
     GameGrid.ToggleCell(0, 0);
-    Life EndResultTestWith1x1Grid(GameGrid.return_grid(), y, x);
+    Life EndResultTestWith1x1Grid(GameGrid.ReturnGrid(), y, x);
 
     EndResultTestWith1x1Grid.Start(1);
 
@@ -132,7 +132,7 @@ TEST(testLife, rectangular_grid)
     GameGrid.ToggleCell(3, 7);
     GameGrid.ToggleCell(2, 7);
 
-    Life EndResultTestWithRectangularGrid(GameGrid.return_grid(), y, x);
+    Life EndResultTestWithRectangularGrid(GameGrid.ReturnGrid(), y, x);
     EndResultTestWithRectangularGrid.Start(1);
 
     char expected_alive = '*';

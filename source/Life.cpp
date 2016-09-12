@@ -317,7 +317,7 @@ void Grid::InitaliseGrid()
     }
 }
 
-std::vector< std::vector<int>> Grid::return_grid()
+std::vector< std::vector<int>> Grid::ReturnGrid()
 {
     return m_grid;
 }

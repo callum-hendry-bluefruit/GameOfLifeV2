@@ -22,7 +22,7 @@ private:
 public:
     Grid(int size_y, int size_x);
 
-    std::vector< std::vector<int>> return_grid();
+    std::vector< std::vector<int>> ReturnGrid();
 
     char GetGridValue(int y, int x);
     int GetSizeY();
