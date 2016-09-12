@@ -11,10 +11,8 @@
 
 class Grid
 {
-protected:
-    std::vector< std::vector<int>> m_grid;
-
 private:
+    std::vector< std::vector<int>> m_grid;
     void InitaliseGrid();
     void PrintGrid();
     int m_size_y;
@@ -36,12 +34,10 @@ public:
 
 class Life
 {
-protected:
+private:
     std::vector< std::vector<int> > m_life_grid;
     std::vector< std::vector<int> > m_staging_grid;
     void ToggleCell(int y, int x);
-
-private:
     std::array<int, 8> m_current_surroundings;
     int m_size_x;
     int m_size_y;
