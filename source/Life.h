@@ -49,12 +49,12 @@ private:
     void InitaliseGrid();
     void StagingToActual();
 
-    int ReturnLiveNeighboursCount(int, int);
+    int ReturnLiveNeighboursCount(int y, int x);
 
     bool ScanCells();
-    bool CheckForOneOrLessLiveNeighbours(int, int);
-    bool CheckForFourOrMoreLiveNeighbours(int, int);
-    bool CheckForThreeLiveNeighboursIfDead(int, int);
+    bool CheckForOneOrLessLiveNeighbours(int y, int x);
+    bool CheckForFourOrMoreLiveNeighbours(int y, int x);
+    bool CheckForThreeLiveNeighboursIfDead(int y, int x);
 
 public:
     Life(std::vector< std::vector<int> >, int size_y, int size_x);
