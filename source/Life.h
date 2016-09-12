@@ -13,16 +13,20 @@ class Grid
 {
 private:
     std::vector< std::vector<int>> m_grid;
+
     void InitaliseGrid();
     void PrintGrid();
+
     int m_size_y;
     int m_size_x;
+
 public:
     Grid(int size_y, int size_x);
 
     std::vector< std::vector<int>> ReturnGrid();
 
     char GetGridValue(int y, int x);
+
     int GetSizeY();
     int GetSizeX();
     
@@ -37,8 +41,11 @@ class Life
 private:
     std::vector< std::vector<int> > m_life_grid;
     std::vector< std::vector<int> > m_staging_grid;
-    void ToggleCell(int y, int x);
+
     std::array<int, 8> m_current_surroundings;
+
+    void ToggleCell(int y, int x);
+
     int m_size_x;
     int m_size_y;
 
@@ -55,9 +62,11 @@ private:
 public:
     Life(std::vector< std::vector<int> >, int size_y, int size_x);
     ~Life();
+
     void Start(int num_of_generations = 1); //if no variable, assume 1 for testing purposes
     void PrintGrid();
     void PrintStagingGrid();
+
     char GetGridValue(int y, int x);
     char GetStagingGridValue(int y, int x);
 };
