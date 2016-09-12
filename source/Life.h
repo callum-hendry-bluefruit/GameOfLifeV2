@@ -45,7 +45,6 @@ private:
     std::array<int, 8> m_current_surroundings;
     int m_size_x;
     int m_size_y;
-    char m_scan_cells_current_location_contents;
 
     void InitaliseGrid();
     void InitalValues();
