@@ -47,7 +47,6 @@ private:
     int m_size_y;
 
     void InitaliseGrid();
-    void InitalValues();
     void StagingToActual();
 
     int ReturnLiveNeighboursCount(int, int);
