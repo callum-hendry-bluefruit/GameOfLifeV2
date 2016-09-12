@@ -62,8 +62,8 @@ public:
     void Start(int num_of_generations = 1); //if no variable, assume 1 for testing purposes
     void PrintGrid();
     void PrintStagingGrid();
-    char GetGridValue(int, int);
-    char GetStagingGridValue(int, int);
+    char GetGridValue(int y, int x);
+    char GetStagingGridValue(int y, int x);
 };
 
 static void waitForOneSecond()
