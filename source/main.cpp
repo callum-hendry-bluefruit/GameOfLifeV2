@@ -102,7 +102,7 @@ int main()
         GameGrid.ToggleCell(2, 2);
     }
 
-    Life Main(GameGrid.return_grid(), y, x);
+    Life Main(GameGrid.ReturnGrid(), y, x);
     Main.Start(num_of_loops);
 
     char pause;
