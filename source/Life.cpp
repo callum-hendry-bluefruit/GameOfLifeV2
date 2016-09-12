@@ -145,15 +145,7 @@ bool Life::CheckForOneOrLessLiveNeighbours(int y, int x)
 
 bool Life::CheckForFourOrMoreLiveNeighbours(int y, int x)
 {
-    ReturnLiveNeighboursCount(y, x);
-    int live_neighbours_count = 0;
-    for (int i = 0; i < 8; i++)
-    {
-        if (m_current_surroundings[i] == '*')
-        {
-            live_neighbours_count += 1;
-        }
-    }
+    int live_neighbours_count = ReturnLiveNeighboursCount(y, x);
     if (live_neighbours_count >= 4)
     {
         ToggleCell(y, x);
@@ -167,15 +159,7 @@ bool Life::CheckForFourOrMoreLiveNeighbours(int y, int x)
 
 bool Life::CheckForThreeLiveNeighboursIfDead(int y, int x)
 {
-    ReturnLiveNeighboursCount(y, x);
-    int live_neighbours_count = 0;
-    for (int i = 0; i < 8; i++)
-    {
-        if (m_current_surroundings[i] == '*')
-        {
-            live_neighbours_count += 1;
-        }
-    }
+    int live_neighbours_count = ReturnLiveNeighboursCount(y, x);
     if (live_neighbours_count == 3)
     {
         ToggleCell(y, x);
