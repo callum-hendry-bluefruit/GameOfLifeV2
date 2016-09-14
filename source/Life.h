@@ -70,7 +70,7 @@ public:
     char GetStagingGridValue(int y, int x);
 };
 
-static void waitForOneSecond()
+static void WaitForHalfSecond()
 {
     using namespace std::this_thread;
     using namespace std::chrono;

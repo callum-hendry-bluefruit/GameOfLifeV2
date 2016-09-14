@@ -20,7 +20,7 @@ void Life::Start(int number_of_loops)
 
     system("cls");
     PrintGrid();
-    waitForOneSecond();
+    WaitForHalfSecond();
 
     if (number_of_loops == 0)
     {
@@ -32,7 +32,7 @@ void Life::Start(int number_of_loops)
             PrintGrid();
             std::cout << std::endl;
             std::cout << "Number of generations: " << number_of_generations << std::endl;
-            waitForOneSecond();
+            WaitForHalfSecond();
         }
         std::cout << std::endl;
         std::cout << "Simulation stopped; end of possible generations" << std::endl;
@@ -51,7 +51,7 @@ void Life::Start(int number_of_loops)
                 PrintGrid();
                 std::cout << std::endl;
                 std::cout << "Number of generations: " << number_of_generations << std::endl;
-                waitForOneSecond();
+                WaitForHalfSecond();
             }
 
 
