@@ -49,7 +49,6 @@ private:
     int m_size_x;
     int m_size_y;
 
-    void InitaliseGrid();
     void StagingToActual();
 
     int ReturnLiveNeighboursCount(int y, int x);
@@ -71,7 +70,7 @@ public:
     char GetStagingGridValue(int y, int x);
 };
 
-static void waitForOneSecond()
+static void WaitForHalfSecond()
 {
     using namespace std::this_thread;
     using namespace std::chrono;
